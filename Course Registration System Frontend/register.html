@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> Register a Course</title>
+
+        <style>
+            body {
+                background-color: black;
+                text-align: center; 
+            }
+
+            form {
+                margin:  auto;
+                padding: 20px;
+                width: 400px; 
+                background-color: #fff;
+            }
+
+            input, select, button {
+                width: 90%;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white; 
+                font-weight: bold;
+                font-size: medium;
+                cursor: pointer; 
+            }
+
+            button:hover {
+                background-color: #104212; 
+            }
+        
+        </style>
+    </head>
+<body>
+    <h2 style="color: yellow;">Kickstart Your Career with Us</h2>
+    <p>Register below to enroll in your preferred course</p>
+
+    <form action="http://localhost:8080/courses/register" method="POST">
+        <label for="name">Enter Your Name</label><br>
+        <input type="text" name="name" required><br><br>
+        <label for="emailId">Enter Your Email</label><br>
+        <input type="email" name="emailId" required><br><br>
+        <label for="courseName">Select Course</label><br><br>
+        <select name="courseName" id="courseName" required>
+            <option value="Java Programming Essentials">Java Programming Essentials</option>
+            <option value="Python Programming Essentials">Python Programming Essentials</option>
+            <option value="Cloud Computing Fundamentals">Cloud Computing Fundamentals</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+    </form>
+</body> 
+</html>
